@@ -42,18 +42,29 @@ img {
 }
 ul {
   border: none;
+  background: none;
 }
+.nav-link {
+  text-align: center;
+}
+
 .dropdown-item {
   text-align: center;
 }
-.SearchBox {
+/* .SearchBox {
   background: white;
   padding-top: 30px !important;
   max-height: 60px !important;
-}
+} */
 input {
   padding-bottom: 5px;
 }
+.Reg-Style {
+  text-decoration: underline;
+}
+/* button {
+  border-radius: 10%;
+} */
 /* .Fix-align {
   margin-top: 10px;
 } */
