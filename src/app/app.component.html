@@ -1,172 +1,165 @@
-<div class="container">
+<!--routing -->
+<router-outlet></router-outlet>
+<div class="container mt-3">
   <!--navbar starts-->
-
+  <!-- <div class="NavPostion"> -->
   <nav class="navbar navbar-expand-lg navbar-light">
-    <div class="container-fluid">
-      <a class="d-flex navbar-brand bi" href="#">
-        <i class="bi bi-bar-chart-line"></i>
-        StandardBank
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 NavPosition">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Service
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <!-- <li>< class="dropdown-divider" /></li> -->
-              <li>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </li>
-            </ul>
-          </li>
+    <!-- <div class="container-fluid">  no use -->
+    <a class="navbar-brand bi" href="#">
+      <i class="bi bi-bar-chart-line"></i>
+      StandardBank
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            href=""
+            routerLink="cryptocurrency"
+            >Crypto</a
+          >
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Service
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action1</a></li>
+            <li><a class="dropdown-item" href="#">Action2</a></li>
+            <!-- <li>< class="dropdown-divider" /></li> -->
+            <li>
+              <a class="dropdown-item" href="#">Action3</a>
+            </li>
+          </ul>
+        </li>
 
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Feature
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <!-- <li><hr class="dropdown-divider" /></li> -->
-              <li>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-        <form class="d-flex justify-content-center">
-          <a class="nav-link active Reg-Style" href="">Register</a>
-          <button class="btn btn-primary" type="submit">Login Now</button>
-        </form>
-      </div>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Feature
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action1</a></li>
+            <li><a class="dropdown-item" href="#">Action2</a></li>
+            <!-- <li><hr class="dropdown-divider" /></li> -->
+            <li>
+              <a class="dropdown-item" href="#">Action3</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex justify-content-center">
+        <a class="nav-link active Reg-Style" href="">Register</a>
+        <button class="btn btn-primary" type="submit">Login Now</button>
+      </form>
     </div>
   </nav>
-
+  <!-- </div> -->
   <!--
   sec-2
 -->
   <section class="Section-2">
-    <div class="d-flex justify-content-sm-center">
-      <!-- <h5>FINANCIAL PLATFORM NUMBER 1</h5>
+    <!-- <h5>FINANCIAL PLATFORM NUMBER 1</h5>
     <p class="Advertise">
       Best & Trusted <br />
       Digital Bank
     </p> -->
-      <div class="row">
-        <div class="col col-sm">
-          <h5>FINANCIAL PLATFORM NUMBER 1</h5>
-          <p class="Advertise">Best & Trusted Digital Bank</p>
+    <div class="row">
+      <div class="col-md">
+        <h5>FINANCIAL PLATFORM NUMBER 1</h5>
+        <p class="Advertise">
+          Best & Trusted <br />
+          Digital Bank
+        </p>
 
-          <h6>
-            By using this StandardBank can make it easier for you to control or
-            in money transactions
-          </h6>
-          <div class="">
-            <div class="row">
-              <div class="col-8 col-md-6">
-                <input
-                  class="form-control"
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search"
-                />
-              </div>
-              <div class="col-4 col-md-6 col-sm-6">
-                <button class="btn btn-primary" type="submit">Search</button>
-              </div>
-            </div>
+        <h6>
+          By using this StandardBank can make it easier for you to control or in
+          money transactions
+        </h6>
+        <div class="row mt-5">
+          <div class="col-8 col-md-6">
+            <input
+              class="form-control"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
           </div>
-          <!-- <div class="row mt-5">
-            <div class="col-8 col-sm-6">
-              <input
-                class="form-control"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
+          <div class="col-4 col-md-6">
+            <button class="btn btn-primary" type="submit">
+              <i class="bi bi-search"></i>search
+            </button>
+          </div>
+        </div>
+
+        <div class="mt-5">
+          <div class="row">
+            <!-- <div class="col"></div> -->
+            <div class="col LogoBox">
+              <img
+                src="https://seeklogo.com/images/S/stripe-logo-C409DC9652-seeklogo.com.png"
+                alt=""
               />
             </div>
-            <div class="col-4 col-md-6">
-              <button class="btn btn-primary" type="submit">Search</button>
+            <div class="col">
+              <img
+                src="https://www.deltavcapital.com/wp-content/uploads/2017/12/bitpay-logo.png"
+                alt=""
+              />
             </div>
-          </div> -->
-          <!-- company logos
-        -->
+            <div class="col Fix-align">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Visa_2021.svg/2560px-Visa_2021.svg.png"
+                alt=""
+              />
+            </div>
 
-          <div class="mt-5">
-            <div class="row">
-              <!-- <div class="col"></div> -->
-              <div class="col">
-                <img
-                  src="https://seeklogo.com/images/S/stripe-logo-C409DC9652-seeklogo.com.png"
-                  alt=""
-                />
-              </div>
-              <div class="col">
-                <img
-                  src="https://www.deltavcapital.com/wp-content/uploads/2017/12/bitpay-logo.png"
-                  alt=""
-                />
-              </div>
-              <div class="col Fix-align">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Visa_2021.svg/2560px-Visa_2021.svg.png"
-                  alt=""
-                />
-              </div>
-
-              <div class="col">
-                <img
-                  src="https://cdn-assets.affirm.com/images/all_black_logo-transparent_bg.png"
-                  alt=""
-                />
-              </div>
-              <div class="col">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Elo_card_association_logo_-_black_text.svg/1200px-Elo_card_association_logo_-_black_text.svg.png"
-                  alt=""
-                />
-              </div>
+            <div class="col">
+              <img
+                src="https://cdn-assets.affirm.com/images/all_black_logo-transparent_bg.png"
+                alt=""
+              />
+            </div>
+            <div class="col">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Elo_card_association_logo_-_black_text.svg/1200px-Elo_card_association_logo_-_black_text.svg.png"
+                alt=""
+              />
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="col-md col-sm">
-          <img
-            src="https://brand.brex.com/transform/9e9fe903-d108-44ce-8795-153b41f6d88b/bottom-billboard-image"
-            alt=""
-          />
-        </div>
+      <div class="col-md">
+        <img
+          src="https://brand.brex.com/transform/9e9fe903-d108-44ce-8795-153b41f6d88b/bottom-billboard-image"
+          alt=""
+        />
       </div>
     </div>
   </section>
@@ -174,144 +167,138 @@
   section 3
 -->
   <section class="Section-3">
-    <div class="">
-      <h5>OUR PRODUCTS</h5>
-      <P> Various kinds of finance products </P>
-    </div>
+    <h5>OUR PRODUCTS</h5>
+    <P>
+      Various kinds of <br />
+      finance products
+    </P>
   </section>
 
   <!--card and images-->
-  <section class="Section-4 d-flex justify-content-between">
-    <div class="d-sm-flex justify-content-center">
-      <div class="row">
-        <div class="col-sm">
-          <div class="card mb-3 ProductBox">
-            <img
-              src="https://advocateprinting.net/wp-content/uploads/2020/08/AMP.png"
-              class="card-img-top"
-              alt="..."
-            />
-          </div>
-          <h2>make transaction easily</h2>
+  <section class="Section-4">
+    <div class="row justify-content-center">
+      <div class="col-sm">
+        <div class="card mb-3">
+          <img
+            src="https://advocateprinting.net/wp-content/uploads/2020/08/AMP.png"
+            class="card-img-top"
+            alt="..."
+          />
+        </div>
+        <h2>Make transaction easily</h2>
 
-          <h6>
-            we always want users to be able to make transaction easily and
-            comfartably
-          </h6>
+        <h6>
+          We always want users to be able to make transaction easily and
+          comfartably
+        </h6>
+      </div>
+      <div class="col-sm">
+        <div class="card mb-3">
+          <img
+            src="https://ambition-in-motion.com/assets/2020/img/illustrations/app-user-add.png"
+            class="card-img-top"
+            alt="..."
+          />
         </div>
-        <div class="col-sm ProductBox">
-          <div class="card mb-3">
-            <img
-              src="https://ambition-in-motion.com/assets/2020/img/illustrations/app-user-add.png"
-              class="card-img-top"
-              alt="..."
-            />
-          </div>
-          <h2>Various helpful features</h2>
-          <h6>
-            Find things that makes you more comfortable in managing finances
-            with the best features
-          </h6>
+        <h2>Various helpful features</h2>
+        <h6>
+          Find things that makes you more comfortable in managing finances with
+          the best features
+        </h6>
+      </div>
+      <div class="col-sm">
+        <div class="card mb-3">
+          <img
+            src="https://www.sketchappsources.com/resources/source-image/crypto-logos-kapklam.png"
+            class="card-img-top"
+            alt="..."
+          />
         </div>
-        <div class="col-sm ProductBox">
-          <div class="card mb-3">
-            <img
-              src="https://www.sketchappsources.com/resources/source-image/crypto-logos-kapklam.png"
-              class="card-img-top"
-              alt="..."
-            />
-          </div>
-          <h2>Coin investment platform</h2>
-          <h6>
-            Here we also provide various types of digit coins for you to invest
-            safely and comfortably
-          </h6>
-        </div>
+        <h2>Coin investment platform</h2>
+        <h6>
+          Here we also provide various types of digit coins for you to invest
+          safely and comfortably
+        </h6>
       </div>
     </div>
   </section>
 
   <section class="Section-5">
-    <p>Various kinds of finance products</p>
-    <div class="">
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="accordion" id="accordionPanelsStayOpenExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                <button
-                  class="accordion-button"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseOne"
-                  aria-expanded="true"
-                  aria-controls="panelsStayOpen-collapseOne"
-                >
-                  We have features that help your finance #1
-                </button>
-              </h2>
-              <div
-                id="panelsStayOpen-collapseOne"
-                class="accordion-collapse collapse show"
-                aria-labelledby="panelsStayOpen-headingOne"
+    <div class="row justify-content-center">
+      <p>Various kinds of finance products</p>
+      <div class="col-sm-4">
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseOne"
+                aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseOne"
               >
-                <div class="accordion-body">idk</div>
-              </div>
+                We have features that help your finance
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="panelsStayOpen-headingOne"
+            >
+              <div class="accordion-body">idk</div>
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseTwo"
-                  aria-expanded="false"
-                  aria-controls="panelsStayOpen-collapseTwo"
-                >
-                  All kinds of activity regarding finance #2
-                </button>
-              </h2>
-              <div
-                id="panelsStayOpen-collapseTwo"
-                class="accordion-collapse collapse"
-                aria-labelledby="panelsStayOpen-headingTwo"
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseTwo"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseTwo"
               >
-                <div class="accordion-body">idk</div>
-              </div>
+                All kinds of activity regarding finance
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingTwo"
+            >
+              <div class="accordion-body">idk</div>
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseThree"
-                  aria-expanded="false"
-                  aria-controls="panelsStayOpen-collapseThree"
-                >
-                  Only here you will get various benifits #3
-                </button>
-              </h2>
-              <div
-                id="panelsStayOpen-collapseThree"
-                class="accordion-collapse collapse"
-                aria-labelledby="panelsStayOpen-headingThree"
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseThree"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseThree"
               >
-                <div class="accordion-body">idk</div>
-              </div>
+                Only here you will get various benifits
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingThree"
+            >
+              <div class="accordion-body">idk</div>
             </div>
           </div>
         </div>
-        <div class="col-sm-6 d-flex justify-content-center">
-          <img
-            src="https://www.dotdotloans.co.uk/assets/img/app-lg.png"
-            alt=""
-          />
-        </div>
+      </div>
+      <div
+        class="col-sm-6 justify-content-center"
+        style="width: 400px; height: 300"
+      >
+        <img src="https://www.dotdotloans.co.uk/assets/img/app-lg.png" alt="" />
       </div>
     </div>
   </section>
 </div>
-
-<!--routing -->
-<router-outlet></router-outlet>
