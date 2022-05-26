@@ -3,7 +3,9 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background: whitesmoke;
+  background-image: url("assets/images/background.png");
 }
+
 img {
   margin-top: 10px;
   padding-bottom: 10px;

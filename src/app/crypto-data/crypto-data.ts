@@ -1,11 +1,11 @@
 export interface IcurruncyData {
   //
-  availableSupply: number;
-
-  id: string;
-  marketCap: number;
-  name: string;
-  price: number;
+  // coins: any;
+  // availableSupply: number;
+  // id: {};
+  // marketCap: number;
+  // name: string;
+  // price: number;
   //   priceBtc: number;
   //   priceChange1d: number;
   //   priceChange1h: number;
